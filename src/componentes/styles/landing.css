@@ -1,0 +1,36 @@
+.div-principalLanding{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+}
+
+
+
+@media(min-width:2500px) and (max-width:5000px){
+
+
+}
+
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+
+}
+
+/*RESOLUCION PARA IPAD*/
+@media(min-width:425px) and (max-width: 800px){
+  .div-principalLanding{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+/*RESOLUCION PARA CELULARES*/
+@media(min-width:0px) and (max-width: 420px){
+  .div-principalLanding{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}

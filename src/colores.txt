@@ -1,0 +1,5 @@
+amarillo claro: #D4AB45
+amarillo mostaza: #CA990F
+verde: #2DA19A
+morado: #6D356C
+gris: #5C5B5F

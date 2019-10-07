@@ -1,0 +1,50 @@
+.div-principalEnlaces{
+  background-color: #6D356C;
+  width:100%;
+  height: auto;
+  border-top: white 5px solid;
+  border-bottom: white 5px solid;
+}
+
+.div-principalEnlaces img{
+  max-width: 24.6%;
+}
+
+.div-principalEnlaces img:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.div-principalEnlaces h1{
+  color: white;
+  font-family: "Gotham-Ultra";
+  font-size: 3vh;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+
+/*RESOLUCION PARA IMAC*/
+@media(min-width:2500px) and (max-width:5000px){
+
+
+}
+
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+
+}
+
+/*RESOLUCION PARA CELULARES*/
+@media(min-width:100px) and (max-width: 420px){
+  .div-principalEnlaces img{
+    max-width: 23%;
+  }
+
+  .div-principalEnlaces h1{
+    color: white;
+    font-family: "Gotham-Ultra";
+    font-size: 1.5vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+}

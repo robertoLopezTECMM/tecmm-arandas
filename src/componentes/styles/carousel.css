@@ -1,0 +1,363 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url("http://tecmm.edu.mx/fuentesOficiales/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra';
+  src: url("http://tecmm.edu.mx/fuentesOficiales/Gotham-Ultra.otf");
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("http://tecmm.edu.mx/fuentesOficiales/GothamBook.ttf");
+}
+
+
+
+.div-principal-carouselComponent{
+  width: 100%;
+  height: 100%;
+  background-color: #d6d6d6;
+  display: flex;
+
+}
+
+.div-carousel-carouselComponent{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+
+.ui.stackable.four.column.grid{
+  background-color: !important;
+  position: absolute;
+  top:3%;
+  right: 1.5%;
+}
+
+.ui.grid>*{
+  padding-left: 1%;
+  padding-top: 0%;
+  padding-right: 0%;
+}
+
+.carousel .slide{
+  background-color: #6D356C;
+}
+
+
+
+.btn1Oferta {
+  position: relative;
+  width:20vh;
+  height: 8vh;
+  background-color: #2DA19A;
+  right:0%;
+
+  color: white;
+  font-size: 2vh;
+  font-family: 'Gotham-Ultra';
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+  text-align: center;
+  margin:1%;
+}
+
+.btn1Oferta:hover{
+  background-color: #2DA19A;
+  opacity: 0.8;
+}
+
+.btn2Campus {
+  position: relative;
+  width:20vh;
+  height: 8vh;
+  left:0%;
+  background-color: #2DA19A;
+  color: white;
+  font-size: 2vh;
+  font-family: 'Gotham-Ultra';
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+  text-align: center;
+  margin:1%;
+}
+
+.btn2Campus:hover{
+  background-color: #2DA19A;
+  opacity: 0.8;
+}
+
+.btn3Escolares {
+  position: relative;
+  width:20vh;
+  height: 8vh;
+  background-color: #2DA19A;
+  left:0%;
+  color: white;
+  font-size: 2vh;
+  font-family: 'Gotham-Ultra';
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+  text-align: center;
+  margin: 1%;
+}
+
+.btn3Escolares:hover{
+  background-color: #2DA19A;
+  opacity: 0.8;
+}
+
+
+/*RESOLUCION PARA IMAC*/
+@media(min-width:2500px) and (max-width:5000px){
+
+  .div-carousel-botonesCarousel{
+    width:50%;
+    height: 18%;
+    background-color: ;
+
+    position:absolute;
+    z-index: 30;
+    display: flex;
+
+    right: 0%;
+    top: 0%;
+  }
+
+  .ui.stackable.four.column.grid{
+    background-color: !important;
+    position: absolute;
+    top:1.2%;
+    right: 0.8%;
+  }
+
+  .ui.grid>*{
+    padding-left: 1%;
+    padding-top: 0%;
+    padding-right: 0%;
+  }
+
+  .btn1Oferta {
+    position: relative;
+    width:17vh;
+    height: 8vh;
+    background-color: #2DA19A;
+
+    left:0%;
+    /*top:10%;*/
+
+    color: white;
+    font-size: 1.8vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .btn2Campus {
+    position: relative;
+    width:17vh;
+    height: 8vh;
+    left:0%;
+    background-color: #2DA19A;
+    color: white;
+    font-size: 1.8vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+
+  .btn3Escolares {
+    position: relative;
+    width:17vh;
+    height: 8vh;
+    background-color: #2DA19A;
+    left:0%;
+    color: white;
+    font-size: 1.8vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+}
+
+/*RESOLUCION PARA MACBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+  .ui.stackable.four.column.grid{
+    background-color: !important;
+    position: absolute;
+    top:2%;
+    right: 1.2%;
+  }
+
+  .ui.grid>*{
+    padding-left: 1%;
+    padding-top: 0%;
+    padding-right: 0%;
+  }
+}
+
+@media(max-width: 770px){
+
+  .div-carousel-botonesCarousel{
+    width:50%;
+    height: 30%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    justify-content: space-between;
+    right: 0%;
+    top: 0%;
+  }
+
+  .btn1Oferta {
+    position: relative;
+    width:12vh;
+    height: 7vh;
+    background-color: #2DA19A;
+
+    left:0%;
+    /*top:10%;*/
+
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .btn2Campus {
+    position: relative;
+    width:12vh;
+    height: 7vh;
+    left:0%;
+    background-color: #2DA19A;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .btn3Escolares {
+    position: relative;
+    width:12vh;
+    height: 7vh;
+    background-color: #2DA19A;
+    left:0%;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .ui.stackable.four.column.grid{
+    display: none;
+  }
+
+}
+
+@media(max-width: 420px){
+
+  .div-principal-carouselComponent{
+    width: 100%;
+    height: 100%;
+    background-color: #d6d6d6;
+    display: block;
+
+  }
+
+  .div-carousel-carouselComponent{
+    width: 100%;
+    height: 100%;
+    position:static;
+    display: block;
+
+  }
+
+  .div-carousel-botonesCarousel{
+    width:100%;
+    height: 10vh;
+    position:static;
+
+    z-index: 40;
+    display: none;
+    right: 0%;
+    top: 0%;
+  }
+
+  .btn1Oferta {
+    position: relative;
+    width:12vh;
+    height: 7vh;
+    background-color: #2DA19A;
+
+    left:0%;
+    /*top:10%;*/
+
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .btn2Campus {
+    position: relative;
+    width:12vh;
+    height: 7vh;
+    left:0%;
+    background-color: #2DA19A;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .btn3Escolares {
+    position: relative;
+    width:12vh;
+    height: 7vh;
+    background-color: #2DA19A;
+    left:0%;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Gotham-Ultra';
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+    text-align: center;
+  }
+
+  .ui.stackable.four.column.grid{
+    display: none;
+  }
+
+}

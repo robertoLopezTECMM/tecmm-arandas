@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url(../../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra';
+  src: url(../../fonts/Gotham-Ultra.otf);
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url(../../fonts/Gotham-Book.ttf);
+}
+
+
+
+.div-principalMenuCentral{
+  background-color: white;
+}
+
+.img-menuCentral-header{
+  width:100%;
+}
+
+.img-menuCentral-nombre{
+  width:100%;
+}
+
+.menuCentral {
+  width: 100%;
+  height: 45px;
+  padding-left: 5%;
+  overflow:visible;
+  border-bottom: 3px solid #6D356C;
+}
+
+.menuCentral a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.7vh;
+  font-family: 'Gotham';
+  cursor: pointer;
+}
+
+.menuCentral a:hover{
+  background-color: #6D356C;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: grey;
+  font-family: 'Gotham';
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 2px 2px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a{
+  text-align: left!important;
+  width: 100%;
+}
+
+.dropdown-content a:hover{
+  background-color: #6D356C;
+  color: white!important;
+}
+
+
+
+
+.span-menuMovilButton{
+  display: none;
+}
+
+.sidenav{
+  display: none;
+}
+
+
+
+/*RESOLUCION PARA IMAC*/
+@media(min-width:2500px) and (max-width:5000px){
+  .menuCentral {
+    width: 100%;
+    height: 85px;
+    padding-left: 4%;
+
+    overflow:visible;
+    border-bottom: 8px solid #6D356C;
+
+  }
+
+  .menuCentral a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 24px 26px;
+
+    text-decoration: none;
+    font-size: 1.7vh;
+    font-family: 'Gotham';
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    width: 300px;
+  }
+
+}
+
+
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+  .menuCentral {
+    width: 100%;
+    height:55px;
+    padding-left: 4%;
+
+    overflow:visible;
+    border-bottom: 5px solid #6D356C;
+
+  }
+
+  .menuCentral a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+
+    text-decoration: none;
+    font-size: 1.7vh;
+    font-family: 'Gotham';
+    cursor: pointer;
+  }
+}
+
+
+/*RESOLUCION PARA CELULARES*/
+@media(min-width:100px) and (max-width: 420px){
+
+  .menuCentral {
+    display: none;
+  }
+
+  .span-menuMovilButton{
+    display: block;
+    cursor: pointer;
+    font-size: 4vh;
+    float: left;
+    color:#2DA19A;
+    position: absolute;
+  }
+
+  .sidenav {
+    z-index: 5!important;
+    display:block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(45, 161, 154);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    text-align: left;
+    color: white;
+  }
+
+  .sidenav a {
+    padding: 1px 1px 15px 1px;
+    text-decoration: none;
+    font-family: "Gotham-Ultra";
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+    color: white!important;
+  }
+
+  .sidenav .tecmmicon{
+    max-width: 30%;
+    position: absolute;
+    top:1%;
+  }
+
+  .sidenav ul{
+    color: white;
+  }
+
+}

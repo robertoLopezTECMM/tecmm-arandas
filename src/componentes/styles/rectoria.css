@@ -1,0 +1,146 @@
+.div-principalRectoria{
+  width:80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.div-contenedorDirectores{
+  background-color: white;
+  text-align: center;
+}
+
+.div-director{
+  width: 35%;
+  height: auto;
+  background-color: ;
+  margin:0px auto;
+}
+
+#card-director{
+  margin-left: 5%;
+}
+
+.ui.cards{
+  background-color: ;
+  margin:0%;
+  padding-left: 8%;
+}
+
+#nombre{
+  font-family: "Gotham-Ultra";
+  color:#6D356C;
+}
+
+#puesto{
+  font-family: "Gotham";
+}
+
+#correo{
+  font-size: 1.6vh;
+  font-family: "Gotham-Book"
+}
+
+#contacto{
+  background-color: #2DA19A;
+  color:white;
+  font-family: "Gotham";
+  font-size: 1.4vh;
+}
+
+#directories{
+  padding-left: 2.5%;
+}
+
+/*RESOLUCION PARA IMAC*/
+@media(min-width:2500px) and (max-width:5000px){
+  .div-contenedorDirectores{
+    background-color: white;
+    text-align: center;
+  }
+
+  .div-director{
+    width: 30%;
+    height: auto;
+    background-color: ;
+    margin:0px auto;
+  }
+
+  #card-director{
+    width: 450px;
+    margin-left: 10%;
+  }
+
+
+  .ui.cards{
+    background-color: ;
+    margin:0%;
+    padding-left: 5%;
+  }
+
+  #card-rectoriaItem{
+    width: 450px;
+  }
+
+  #nombre{
+    font-family: "Gotham-Ultra";
+    color:#6D356C;
+  }
+
+  #puesto{
+    font-family: "Gotham";
+  }
+
+  #correo{
+    font-size: 1.2vh;
+    font-family: "Gotham-Book"
+  }
+
+  #contacto{
+    background-color: #2DA19A;
+    color:white;
+    font-family: "Gotham";
+    font-size: 1.4vh;
+  }
+
+  #directories{
+    padding-left: 2.5%;
+  }
+}
+
+
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+  .div-contenedorDirectores{
+    background-color: white;
+    text-align: center;
+  }
+
+  .div-director{
+    width: 30%;
+    height: auto;
+    background-color: ;
+    margin:0px auto;
+  }
+
+  #card-director{
+    width: 350px;
+    margin-left: 3%;
+  }
+
+
+  .ui.cards{
+    background-color: ;
+    margin:0%;
+    padding-left: 3%;
+  }
+
+  #card-rectoriaItem{
+    width: 300px;
+  }
+}
+
+
+/*RESOLUCION PARA CELULARES*/
+@media(min-width:100px) and (max-width: 420px){
+
+}

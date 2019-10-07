@@ -1,0 +1,86 @@
+.div-principal-ofertaAcademica{
+  width:80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+}
+
+.img-ofertaAcademica-portada{
+  width:100%;
+}
+
+.div-carreras{
+  padding: 3%;
+  width:100%;
+  height: 100%;
+  background-color: ;
+}
+
+.img-ItemCarrera{
+  max-width:300px;
+  max-height:300px;
+  margin:3px;
+  border:solid 2px #6D356C;
+}
+
+
+@media(min-width:2500px) and (max-width:5000px){
+  .div-carreras{
+    padding: 3%;
+    width:100%;
+    height: 100%;
+    background-color: ;
+  }
+
+  .img-ItemCarrera{
+    max-width:500px;
+    max-height:500px;
+    margin:3px;
+    border:solid 2px #6D356C;
+  }
+
+}
+
+
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+  .div-carreras{
+    padding: 3%;
+    width:100%;
+    height: 100%;
+    background-color: ;
+  }
+
+  .img-ItemCarrera{
+    max-width:350px;
+    max-height:350px;
+    margin:3px;
+    border:solid 2px #6D356C;
+  }
+}
+
+
+/*RESOLUCION PARA CELULARES*/
+@media(min-width:100px) and (max-width: 420px){
+  .div-principal-ofertaAcademica{
+    width:100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: grey;
+  }
+
+  .div-carreras{
+    padding: 0%;
+    width:100%;
+    height: 100%;
+    background-color: ;
+  }
+
+  .img-ItemCarrera{
+    max-width:180px;
+    max-height:180px;
+    margin:3px;
+    border:solid 2px #6D356C;
+  }
+
+}

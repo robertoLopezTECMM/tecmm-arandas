@@ -1,0 +1,346 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url("http://tecmm.edu.mx/fuentesOficiales/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra';
+  src: url("http://tecmm.edu.mx/fuentesOficiales/Gotham-Ultra.otf");
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("http://tecmm.edu.mx/fuentesOficiales/GothamBook.ttf");
+}
+
+/*Links Footer*/
+.div-principal-linksFooter{
+  display:block;
+  width: 100%;
+  height:100%;
+  background-color: transparent;
+  color: white;
+
+}
+
+.listas-linksFooter{
+  display: block;
+  width: 100%;
+  background-color: #5C5B5F;
+}
+
+.lista1-linksFooter{
+  width:100%;
+  padding:2%;
+}
+
+.lista1-linksFooter  .topnav {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  overflow: hidden;
+  background-color: ;
+  margin-top:-0.5%;
+
+}
+
+.lista1-linksFooter .topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 1.4vh;
+  font-family: 'Gotham';
+  cursor: pointer;
+  background-color: ;
+}
+
+.lista1-linksFooter .topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #5C5B5F;
+  color:#2DA19A;
+}
+
+.lista2-linksFooter{
+  display:block;
+  width:100%;
+  padding: 2%;
+}
+
+.lista2-linksFooter  .topnav {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  overflow: hidden;
+  background-color: ;
+  margin-top:-0.5%;
+
+}
+
+.lista2-linksFooter .topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 1.4vh;
+  font-family: 'Gotham';
+  cursor: pointer;
+  background-color: ;
+}
+
+.lista2-linksFooter .topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #5C5B5F;
+  color:#2DA19A;
+}
+
+
+
+
+/*BANNER GRIS CON DOMICILIO*/
+.div-bannerSEP{
+  position: relative;
+  width: 100%;
+  border-top: .7vh solid white;
+}
+
+.div-bannerSEP img{
+  width:100%;
+
+}
+
+.div-direccion{
+  height: 100%;
+  position: absolute;
+  font-family: "Gotham-Book";
+  font-size: 3vh;
+  text-align: left;
+  left:0.5%;
+  margin-top:0%;
+  background-color: ;
+}
+
+.div-direccion a{
+  color: white;
+  cursor: pointer;
+}
+
+.div-transformarMexico{
+  width: 100%;
+  margin-top: -0.3%;
+  border-top: .7vh solid white;
+
+}
+
+.div-transformarMexico img{
+  width:100%;
+}
+
+.div-bannerSepSinTexto{
+  width: 100%;
+  border-top: .7vh solid white;
+  margin-top: -0.3%;
+  border-top: .7vh solid white;
+
+}
+
+.div-bannerSepSinTexto img{
+  width:100%;
+}
+
+
+/*ENLACES DE GOBIERNO*/
+.div-enlaces-gobierno{
+  display: flex;
+  width: 100%;
+  margin-top: -0.3%;
+  border-top: .7vh solid white;
+  padding: 1%;
+  background-color: GREY;
+}
+
+.div-enlaces-gobierno a{
+ line-height: 30px;
+ color: white ;
+}
+
+.div-enlaces{
+  width:33%;
+  display: block;
+  height: auto;
+  text-align: left;
+  font-size: 2.3vh;
+  font-family: "Gotham-Book";
+  background-color: ;
+}
+
+.div-enlaces img{
+  width: 15vh;
+  height: 4.5vh;
+}
+
+.div-QueEsGob{
+  width: 33%;
+  text-align: left;
+  font-size: 2.3vh;
+  font-family: "Gotham-Book";
+  background-color: ;
+}
+
+.div-Contacto{
+  width:53vh;
+  text-align: left;
+  font-family: "Gotham-Book";
+  background-color: ;
+}
+
+
+
+
+/*RESOLUCION PARA IMAC*/
+@media(min-width:2500px) and (max-width:5000px){
+
+
+  .lista1-linksFooter  .topnav {
+    width: 100%;
+    margin-left: 7%;
+    margin-right: 0%;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top:-0.5%;
+  }
+
+  .lista2-linksFooter  .topnav {
+    width: 100%;
+    margin-left: 7%;
+    margin-right: 0%;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top:-0.5%;
+  }
+
+  .div-enlaces-gobierno li{
+    font-size: 2vh;
+    font-family: "Gotham-Book";
+  }
+
+  .div-Contacto a{
+    font-size: 2vh;
+  }
+
+}
+
+
+/*RESOLUCION PARA MACBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+
+  .lista1-linksFooter  .topnav {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top:-0.5%;
+  }
+
+  .lista2-linksFooter  .topnav {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow: hidden;
+    background-color: transparent;
+    margin-top:-0.5%;
+  }
+
+  .div-enlaces-gobierno li{
+    font-size: 2vh;
+  }
+
+  .div-Contacto a{
+    font-size: 2vh;
+  }
+}
+
+
+/*RESOLUCION PARA CELULARES*/
+@media(max-width: 420px){
+
+  .div-direccion{
+    position: absolute;
+    height: 100%;
+    font-family: "Gotham-Book";
+    font-size: 1.3vh;
+    text-align: left;
+    left:0.5%;
+    margin-top:1%;
+    background-color: ;
+  }
+
+  .lista1-linksFooter .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 12px;
+    text-decoration: none;
+    font-size: 1.3vh;
+    font-family: 'Gotham';
+    cursor: pointer;
+  }
+
+  .lista2-linksFooter .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 12px;
+    text-decoration: none;
+    font-size: 1.3vh;
+    font-family: 'Gotham';
+    cursor: pointer;
+  }
+
+
+  .div-enlaces-gobierno{
+    display: block;
+
+  }
+
+  .div-enlaces-gobierno a{
+   line-height: 30px;
+   color: white ;
+  }
+
+  .div-enlaces{
+    width:100%;
+    display: block;
+    height: auto;
+    text-align: left;
+    font-size: 2.3vh;
+    font-family: "Gotham-Book";
+    background-color: ;
+  }
+
+  .div-enlaces img{
+    width: 15vh;
+    height: 4.5vh;
+  }
+
+  .div-QueEsGob{
+    width: 100%;
+    text-align: left;
+    font-size: 2.3vh;
+    font-family: "Gotham-Book";
+    background-color: ;
+  }
+
+  .div-Contacto{
+    width:100%;
+    text-align: left;
+    font-family: "Gotham-Book";
+    background-color:;
+  }
+
+}
