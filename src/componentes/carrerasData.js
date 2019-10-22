@@ -188,7 +188,7 @@ export default function CarrerasData(){
 
     carrerasArray[2]={
       name: 'Ingenieria-Ambiental',
-      link: 'http://tecmm.edu.mx/#/Carrera/Ingenieria-Ambiental',
+      link: 'http://tecmm.edu.mx/Carrera/Ingenieria-Ambiental',
       card:CardIngAmbiental,
       portada: IngAmbiental,
       youtube:'0W4nKuE804U',
@@ -321,7 +321,7 @@ export default function CarrerasData(){
 
     carrerasArray[7]={
       name: 'Ingenieria-Electromecanica',
-      link: 'http://tecmm.edu.mx/#/Carrera/Ingenieria-Electromecanica',
+      link: 'http://tecmm.edu.mx/Carrera/Ingenieria-Electromecanica',
       card:CardIngElectromecanica,
       portada: IngElectromecanica,
       youtube:'rxlPixDE6hc',
@@ -433,7 +433,7 @@ export default function CarrerasData(){
 
     carrerasArray[11]={
       name: 'Ingenieria-en-Gestion-Empresarial',
-      link: 'http://tecmm.edu.mx/#/Carrera/Ingenieria-en-Gestion-Empresarial',
+      link: 'http://tecmm.edu.mx/Carrera/Ingenieria-en-Gestion-Empresarial',
       card:CardIngGestionEmpresarial,
       portada: IngGestionEmpresarial,
       youtube:'SIbWitsNhu0',
@@ -464,7 +464,7 @@ export default function CarrerasData(){
 
     carrerasArray[12]={
       name: 'Ingenieria-Industrial',
-      link: 'http://tecmm.edu.mx/#/Carrera/Ingenieria-Industrial',
+      link: 'http://tecmm.edu.mx/Carrera/Ingenieria-Industrial',
       card:CardIngIndustrial,
       portada: IngIndustrial,
       youtube:'8GONm_MoLLs',
@@ -497,7 +497,7 @@ export default function CarrerasData(){
 
     carrerasArray[13]={
       name: 'Ingenieria-en-Industrias-Alimentarias',
-      link: 'http://tecmm.edu.mx/#/Carrera/Ingenieria-en-Industrias-Alimentarias',
+      link: 'http://tecmm.edu.mx/Carrera/Ingenieria-en-Industrias-Alimentarias',
       card:CardIngIndustriasAlimentarias,
       portada: IngIndustriasAlimentarias,
       youtube:'no1wsBPtCrI',
@@ -588,7 +588,7 @@ export default function CarrerasData(){
 
     carrerasArray[16]={
       name: 'Ingenieria-en-Sistemas-Computacionales',
-      link: 'http://tecmm.edu.mx/#/Carrera/Ingenieria-en-Sistemas-Computacionales',
+      link: 'http://tecmm.edu.mx/Carrera/Ingenieria-en-Sistemas-Computacionales',
       card:CardIngSistemas,
       portada: IngSistemas,
       youtube:'Hw3TO2ZKKto',

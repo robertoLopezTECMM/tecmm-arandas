@@ -51,30 +51,30 @@ class MenuCentral extends Component {
               SOMOS TECMM
               <ul>
                 <li>
-                  <a href="http://tecmm.edu.mx/#/quienesSomos">Quienés Somos</a>
+                  <a href="http://tecmm.edu.mx/quienesSomos">Quienés Somos</a>
                 </li>
 
                 <li>
-                  <a href="http://tecmm.edu.mx/#/rectoria">Rectoria</a>
+                  <a href="http://tecmm.edu.mx/rectoria">Rectoria</a>
                 </li>
 
                 <li>
-                  <a href="http://tecmm.edu.mx/#/bienvenida">Bienvenida</a>
+                  <a href="http://tecmm.edu.mx/bienvenida">Bienvenida</a>
                 </li>
 
                 <li>
-                  <a href="http://tecmm.edu.mx/#/modeloAcademico">Modelo Académico</a>
+                  <a href="http://tecmm.edu.mx/modeloAcademico">Modelo Académico</a>
                 </li>
               </ul>
             </a>
 
             <a href="http://controlescolar.tecmm.edu.mx">ADMISIÓN</a>
-            <a href="http://tecmm.edu.mx/#/vidaEstudiantil">VIDA ESTUDIANTIL</a>
+            <a href="http://tecmm.edu.mx/vidaEstudiantil">VIDA ESTUDIANTIL</a>
             <a href="http://vinculacion.tecmm.edu.mx/">VINCULACIÓN</a>
             <a href="http://www.areaacademica.tecmm.edu.mx/">ÁREA ACADÉMICA</a>
-            <a href="http://tecmm.edu.mx/#/contacto">CONTACTO</a>
-            <a href="http://tecmm.edu.mx/#/igualdad">SGIG</a>
-            <a href="http://tecmm.edu.mx/#/quejasYdenuncias">QUEJAS Y DENUNCIAS</a>
+            <a href="http://tecmm.edu.mx/contacto">CONTACTO</a>
+            <a href="http://tecmm.edu.mx/igualdad">SGIG</a>
+            <a href="http://tecmm.edu.mx/quejasYdenuncias">QUEJAS Y DENUNCIAS</a>
           </div>
           <span className="span-menuMovilButton" onClick={this.openMenu.bind(this)}>&#9776;</span>
         {/*MENU MOVIL*/}
@@ -91,21 +91,21 @@ class MenuCentral extends Component {
             <div class="dropdown">
               <span>SOMOS TECMM <i class="angle down icon"></i></span>
               <div class="dropdown-content">
-                <a href="http://tecmm.edu.mx/#/quienesSomos">Quienés Somos</a>
-                <a href="http://tecmm.edu.mx/#/rectoria">Rectoria</a>
-                <a href="http://tecmm.edu.mx/#/bienvenida">Bienvenida</a>
-                <a href="http://tecmm.edu.mx/#/modeloAcademico">Modelo Académico</a>
+                <a href="http://tecmm.edu.mx/quienesSomos">Quienés Somos</a>
+                <a href="http://tecmm.edu.mx/rectoria">Rectoria</a>
+                <a href="http://tecmm.edu.mx/bienvenida">Bienvenida</a>
+                <a href="http://tecmm.edu.mx/modeloAcademico">Modelo Académico</a>
               </div>
             </div>
           </a>
 
           <a href="http://controlescolar.tecmm.edu.mx">ADMISIÓN</a>
-          <a href="http://tecmm.edu.mx/#/vidaEstudiantil">VIDA ESTUDIANTIL</a>
+          <a href="http://tecmm.edu.mx/vidaEstudiantil">VIDA ESTUDIANTIL</a>
           <a href="http://vinculacion.tecmm.edu.mx/">VINCULACIÓN</a>
           <a href="http://www.areaacademica.tecmm.edu.mx/">ÁREA ACADÉMICA</a>
-          <a href="http://tecmm.edu.mx/#/contacto">CONTACTO</a>
-          <a href="http://tecmm.edu.mx/#/igualdad">SGIG</a>
-          <a href="http://tecmm.edu.mx/#/quejasYdenuncias">QUEJAS Y DENUNCIAS</a>
+          <a href="http://tecmm.edu.mx/contacto">CONTACTO</a>
+          <a href="http://tecmm.edu.mx/igualdad">SGIG</a>
+          <a href="http://tecmm.edu.mx/quejasYdenuncias">QUEJAS Y DENUNCIAS</a>
 
         </div>
       </div>
