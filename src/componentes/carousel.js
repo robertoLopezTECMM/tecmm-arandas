@@ -81,7 +81,7 @@ import './styles/carousel.css';
               </a>
 
               <a href="http://tecmm.edu.mx/unidadesAcademicas">
-                <button className="btn2Campus">RED DE CAMPUS<br/>EN JALISCO</button>
+                <button className="btn2Campus">UNIDADES ACADÉMICAS TECMM</button>
               </a>
 
               <a href="http://controlescolar.tecmm.edu.mx/">
