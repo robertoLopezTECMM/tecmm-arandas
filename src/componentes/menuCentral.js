@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Menu } from 'grommet';
-import { Dropdown } from 'semantic-ui-react'
 
+
+import Dropdown from 'react-bootstrap/Dropdown'
+import Nav from 'react-bootstrap/Nav'
 
 import './styles/menuCentral.css';
 
@@ -80,34 +82,74 @@ class MenuCentral extends Component {
         {/*MENU MOVIL*/}
 
         {/*MENU CENTRAL ESCRITORIO*/}
+
+        <div className="div-menuGobMx">
+          <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"/>
+
+          <div className="div-linksMenuGobMx">
+
+            <ul>
+              <li> <a target="_blank" href="https://www.gob.mx/gobierno">Gobierno</a> </li>
+              <li> <a target="_blank" href="https://www.participa.gob.mx/">Participa</a> </li>
+              <li> <a target="_blank" href="https://datos.gob.mx/">Datos</a> </li>
+              <li> <a target="_blank" href="https://www.gob.mx/gobierno"><i class="search icon"></i></a> </li>
+            </ul>
+
+          </div>
+
+        </div>
         <a href="/">
-          <img className="img-menuCentral-header" src="http://arandas.tecmm.edu.mx/imagenes/header-menuCentral.jpg"/>
+          <img className="img-menuCentral-header" src="http://arandas.tecmm.edu.mx/imagenes/banner-tecmm.webp"/>
         </a>
         <img className="img-menuCentral-nombre" src="http://arandas.tecmm.edu.mx/imagenes/arandas.png"/>
 
-        <div className="menuCentral">
+        <Nav id="menuCentralBootstrap" variant="pills" activeKey="1">
+          <Dropdown>
+            <Dropdown.Toggle id="dropdownBootstrap">SOMOS TECMM</Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="http://tecmm.edu.mx/quienesSomos" id="dropdownItemBootstrap">Quienés Somos</Dropdown.Item>
+              <Dropdown.Item href="http://tecmm.edu.mx/rectoria" id="dropdownItemBootstrap">Rectoria</Dropdown.Item>
+              <Dropdown.Item href="http://tecmm.edu.mx/modeloAcademico" id="dropdownItemBootstrap">Modelo Académico</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="navLinkBootstrap" href="http://controlescolar.tecmm.edu.mx">
+              ADMISIÓN
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="http://tecmm.edu.mx/vidaEstudiantil">
+              VIDA ESTUDIANTIL
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="navLinkBootstrap" href="http://tecmm.edu.mx/enConstruccion">
+              VINCULACIÓN
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="navLinkBootstrap" href="http://tecmm.edu.mx/enConstruccion">
+              ÁREA ACADÉMICA
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="navLinkBootstrap" href="http://tecmm.edu.mx/contacto">
+              CONTACTO
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="navLinkBootstrap" href="http://tecmm.edu.mx/igualdad">
+              SGIG
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item id="navItemBootstrap">
+            <Nav.Link id="navLinkBootstrap" href="http://tecmm.edu.mx/quejasYDenuncias">
+              QUEJAS Y DENUNCIAS
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
 
-          <a>
-            <div class="dropdown">
-              <span>SOMOS TECMM <i class="angle down icon"></i></span>
-              <div class="dropdown-content">
-                <a href="http://tecmm.edu.mx/quienesSomos">Quienés Somos</a>
-                <a href="http://tecmm.edu.mx/rectoria">Rectoria</a>
-                <a href="http://tecmm.edu.mx/bienvenida">Bienvenida</a>
-                <a href="http://tecmm.edu.mx/modeloAcademico">Modelo Académico</a>
-              </div>
-            </div>
-          </a>
 
-          <a href="http://controlescolar.tecmm.edu.mx">ADMISIÓN</a>
-          <a href="http://tecmm.edu.mx/vidaEstudiantil">VIDA ESTUDIANTIL</a>
-          <a href="http://vinculacion.tecmm.edu.mx/">VINCULACIÓN</a>
-          <a href="http://www.areaacademica.tecmm.edu.mx/">ÁREA ACADÉMICA</a>
-          <a href="http://tecmm.edu.mx/contacto">CONTACTO</a>
-          <a href="http://tecmm.edu.mx/igualdad">SGIG</a>
-          <a href="http://tecmm.edu.mx/quejasYdenuncias">QUEJAS Y DENUNCIAS</a>
-
-        </div>
       </div>
     );
   }

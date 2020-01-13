@@ -20,43 +20,21 @@ class Noticiero extends Component {
 
   componentWillMount(){
 
-    var noticiasLocal
-    var objConverted
-    var noticiasFinal = []
-    var counterSize
-
-    const url = 'https://tecmm.edu.mx/dashboard_conexion_db.php'
-    axios.get(url).then(response => response.data)
+    const url = 'https://dashboard.tecmm.edu.mx/dashboardScript.php'
+    axios.get(url, {params:{action:"getNoticias"}}).then(response => response.data)
     .then((data) => {
-      noticiasLocal=data
-      counterSize=noticiasLocal.length
+      var noticiasFinal=[]
 
-      for(var i=counterSize-1; i>=0;){
+      for(var i=data.length-1; i>=0;){
 
-        objConverted={
-          titulo:noticiasLocal[i].titulo,
-          pathTitulo:noticiasLocal[i].pathTitulo,
-          imagen:noticiasLocal[i].imagen,
-          imagenesExtra:JSON.parse(noticiasLocal[i].imagenesExtra),
-          contenido:JSON.parse(noticiasLocal[i].contenido)
-        }
+        noticiasFinal.push(data[i])
 
-        //console.log("objeto convertido: ", objConverted)
-        noticiasFinal.push(objConverted)
+        this.setState({ noticiasArray: noticiasFinal })
 
-        this.setState({
-        noticiasArray: noticiasFinal,
-        showProgress:"none"
-        })
         i--
       }
-
-      console.log("arreglo final: ", this.state.noticiasArray)
-
-
-     })
+    })
   }
-
 
 
   render() {
@@ -77,7 +55,7 @@ class Noticiero extends Component {
          <Slider  {...settings}>
            {this.state.noticiasArray.map((it)=>(
              <div className="div-noticiaItem">
-              <img src={it.imagen}/>
+              <img src={it.imagenPrincipal}/>
               <div className="div-tituloNoticia">{it.titulo}</div>
              </div>
            ))}
@@ -100,7 +78,7 @@ class Noticiero extends Component {
             <Slider  {...settings}>
               {this.state.noticiasArray.map((it)=>(
                 <div className="div-noticiaItem">
-                 <img src={it.imagen}/>
+                 <img src={it.imagenPrincipal}/>
                  <div className="div-tituloNoticia">{it.titulo}</div>
                 </div>
               ))}

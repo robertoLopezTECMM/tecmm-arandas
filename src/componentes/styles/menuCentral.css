@@ -27,6 +27,96 @@
   width:100%;
 }
 
+.div-menuGobMx{
+  width: 100%;
+  height: 5vh;
+  background-color: #0b231e;
+  position: relative;
+}
+
+.div-menuGobMx img{
+  height: 70%;
+  margin:0.5%;
+  position: absolute;
+  left: 0%;
+}
+
+
+
+.div-linksMenuGobMx{
+  position:absolute;
+  right: 0%;
+  width: auto;
+  height: 100%;
+  background-color: ;
+}
+.div-linksMenuGobMx a{
+  color:white;
+}
+
+.div-linksMenuGobMx ul{
+  display: flex;
+  list-style: none;
+}
+
+.div-linksMenuGobMx li{
+  height: 100%;
+  background-color: ;
+  color:white;
+  padding: 10px;
+  font-size: 2vh;
+  cursor: pointer;
+  font-family: "Gotham-Book";
+}
+
+.div-linksMenuGobMx li:hover{
+  background-color: white;
+  opacity: 0.6;
+  color:black;
+  font-family: "Gotham-Book";
+}
+
+#menuCentralBootstrap{
+  background-color: white;
+  width: 100%;
+  border-bottom: 4px solid #6D356C;
+}
+
+#menuCentralBootstrap a{
+  color:grey;
+}
+
+#dropdownBootstrap{
+  background-color: white;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.2rem transparent;
+  color:grey;
+  font-family: "Gotham"!important;
+  font-size: 1.7vh;
+}
+
+#dropdownBootstrap:hover{
+  background-color: #6D356C;
+}
+
+#dropdownItemBootstrap{
+  font-family: "Gotham"!important;
+  font-size: 2vh;
+}
+
+
+
+#navItemBootstrap{
+  font-family: "Gotham"!important;
+  color:grey!important;
+  margin-left:10px;
+  font-size: 1.7vh;
+}
+
+#navItemBootstrap:hover{
+    background-color: #6D356C;
+}
+
 .menuCentral {
   width: 100%;
   height: 45px;

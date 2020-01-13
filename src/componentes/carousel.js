@@ -1,5 +1,5 @@
-
 import React, {Component} from 'react';
+import axios from 'axios';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -36,19 +36,24 @@ import './styles/carousel.css';
       super();
       this.state={
         modalVisible : false,
-        carouselImages:[
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/enneit.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/enneit.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/#/eneit'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/convocatoria-video-2019.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/enneit.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/convocatoria-video-2019.pdf'},
-          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/CONDONACIONES-2019-2020.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/CONDONACIONES-2019-2020.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/CONDONACIONES-2019-2020.pdf'},
-          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-2019.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-2019.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/SEGUNDO-EXAMEN-2019.pdf'},
-          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-EN-LINEA.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-EN-LINEA.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/SEGUNDO-EXAMEN-EN-LINEA.pdf'},
 
-          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://controlescolar.tecmm.edu.mx'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/cover_5_aniv.png', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'https://www.tecnm.mx/'},
-          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/Aceptados.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/documentos/lista-aceptados-semestreB-2019/ACEPTADOS_TECMM_2019.pdf'},
-          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/Aceptados%20Modalidad%20en%20L%c3%adnea%20Banner.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/documentos/lista-aceptados-semestreB-2019/Aceptados-en-Linea.pdf'},
-        ],
+          banners:[
+             //{ref_banner:"http://dashboard.tecmm.edu.mx/bannersCarousel/2019-12-17-condonacioneswebfebjul2019.webp", link:"http://dashboard.tecmm.edu.mx/documentosCarousel/2019-12-17-convocatoria-de-condonaciones-tecmm-feb-jul-2020.pdf"},
+             //{ref_banner:"http://dashboard.tecmm.edu.mx/bannersCarousel/2019-12-04-convocatoriasixsigma.webp", link:"http://dashboard.tecmm.edu.mx/documentosCarousel/2019-12-04-convocatoria lean six sigma yellow belt.pdf"},
+             //{ref_banner:"http://dashboard.tecmm.edu.mx/bannersCarousel/leona-vicario.webp", link:""}
+           ],
       }
+    }
+
+    componentWillMount() {
+      const url = 'http://dashboard.tecmm.edu.mx/dashboardScript.php'
+      axios.get(url, {params:{action:"getBanners"}}).then(response => response.data)
+      .then((data) => {
+        this.setState({
+          banners: data
+        })
+        console.log(this.state.banners)
+      })
     }
 
 
@@ -69,8 +74,8 @@ import './styles/carousel.css';
               emulateTouch
               >
 
-                {this.state.carouselImages.map((it)=>(
-                  <CarouselItem link={it.link} image={it.image} name={it.name} />
+                {this.state.banners.map((it)=>(
+                  <CarouselItem link={it.link} image={it.ref_banner} />
                 ))}
 
             </Carousel>
